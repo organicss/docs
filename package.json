@@ -1,0 +1,29 @@
+{
+  "name": "@organicss/docs",
+  "version": "1.0.0",
+  "description": "Documentation website for OrganiCSS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "lint": "eslint src --config .eslintrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/organicss/docs.git"
+  },
+  "author": "Daniel Yuschick <daniel.yuschick@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/organicss/docs/issues"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "keywords": [],
+  "dependencies": {}
+}
