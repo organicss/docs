@@ -1,32 +1,42 @@
 {
-  "name": "@organicss/docs",
-  "version": "0.0.1",
-  "description": "Documentation website for OrganiCSS.",
-  "main": "index.js",
-  "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve",
-    "lint": "eslint src --config .eslintrc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/organicss/docs.git"
-  },
-  "author": "Daniel Yuschick <daniel.yuschick@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/organicss/docs/issues"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "husky": "^8.0.1"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "keywords": [],
-  "dependencies": {}
+    "name": "@organicss/docs",
+    "version": "0.0.1",
+    "description": "Documentation website for OrganiCSS.",
+    "main": "index.js",
+    "scripts": {
+        "build": "eleventy",
+        "start": "eleventy --serve",
+        "lint": "eslint",
+        "lint:fix": "npm run lint -- --fix",
+        "prettier": "prettier ./ --check",
+        "prettier:fix": "npm run prettier -- --write",
+        "format": "npm run prettier:fix && npm run lint:fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/organicss/docs.git"
+    },
+    "author": "Daniel Yuschick <daniel.yuschick@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/organicss/docs/issues"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^1.0.1",
+        "@commitlint/cli": "^17.0.3",
+        "@commitlint/config-conventional": "^17.0.3",
+        "eslint": "^8.19.0",
+        "eslint-config-prettier": "^8.5.0",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.7.1",
+        "prettier-eslint": "^15.0.1",
+        "prettier-eslint-cli": "^6.0.1"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "keywords": [],
+    "dependencies": {}
 }
