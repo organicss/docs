@@ -1,6 +1,6 @@
 {
   "name": "@organicss/docs",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Documentation website for OrganiCSS.",
   "main": "index.js",
   "scripts": {
