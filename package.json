@@ -25,6 +25,7 @@
         "@11ty/eleventy": "^1.0.1",
         "@commitlint/cli": "^17.0.3",
         "@commitlint/config-conventional": "^17.0.3",
+        "@organicss/scss": "^1.1.2",
         "eslint": "^8.19.0",
         "eslint-config-prettier": "^8.5.0",
         "husky": "^8.0.1",
