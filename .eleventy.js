@@ -12,6 +12,10 @@ module.exports = function (config) {
         postcss: postcss([autoprefixer, cssnano]),
     });
 
+    config.addPassthroughCopy('./src/fonts');
+    config.addPassthroughCopy('./src/assets/icons');
+    config.addPassthroughCopy('./src/assets/images');
+
     return {
         dir: {
             input: 'src',
