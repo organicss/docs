@@ -1,0 +1,44 @@
+@import '../../node_modules/@organicss/scss/';
+@import '../utils/utils';
+
+section[class^='section--hero'] {
+    @include layout($minBlockSize: 90vh);
+    @include padding($padding: var(--o-space-base-12x));
+
+    &:first-child {
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+
+    h1 {
+        color: var(--o-color-primary);
+    }
+
+    h2 {
+        @include layout($textAlign: center);
+    }
+}
+
+.section--hero-alt {
+    @include angle(both);
+    background: var(--o-color-primary);
+    color: var(--o-color-aux-950);
+}
+
+.section--content-container {
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    justify-items: center;
+
+    svg {
+        @include layout($blockSize: min(rem(200), 50vw));
+    }
+
+    p {
+        @include margin($margin: 0);
+        color: var(--o-color-aux-300);
+        font-size: var(--o-font-size-2);
+        text-align: center;
+    }
+}
