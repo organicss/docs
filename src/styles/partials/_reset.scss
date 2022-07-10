@@ -34,7 +34,7 @@ body {
 }
 
 body {
-    @include border($border: 15px solid var(--o-color-primary));
+    @include border($border: 15px solid var(--o-color-primary), $blockEnd: 0);
 
     -webkit-font-smoothing: antialiased;
     accent-color: var(--o-color-primary);

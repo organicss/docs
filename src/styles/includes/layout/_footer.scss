@@ -1,0 +1,8 @@
+footer {
+    @include padding($block: var(--o-space-base-2x), $inline: var(--o-space-base-4x));
+    @include layout($textAlign: end);
+
+    background: var(--o-color-primary);
+    color: var(--o-color-aux-950);
+    font-size: var(--o-font-size--1);
+}
