@@ -1,0 +1,44 @@
+@import '../../utils/mixins';
+
+header {
+    --header-gap: var(--o-space-base-4x);
+
+    @include padding($block: var(--o-space-base-2x), $inline: var(--o-space-base-4x));
+    @include flex-base();
+
+    align-items: center;
+    gap: var(--header-gap);
+    justify-content: space-between;
+
+    .header--logo svg {
+        @include layout($blockSize: rem(75));
+    }
+
+    nav {
+        @include flex-base();
+
+        align-items: center;
+        gap: var(--header-gap);
+    }
+
+    a,
+    a:active,
+    a:visited,
+    a:link {
+        color: var(--o-color-aux-100);
+        text-decoration: none;
+        transition: color 0.25s ease;
+    }
+
+    a:hover {
+        color: var(--o-color-aux-300);
+    }
+}
+
+.header--nav-wrapper {
+    @include flex-base();
+
+    align-items: center;
+    color: var(--o-color-aux-100);
+    gap: var(--header-gap);
+}

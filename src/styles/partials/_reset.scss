@@ -30,7 +30,7 @@ body {
     background: var(--o-color-aux-950);
     color: var(--o-color-aux-100);
     font-family: var(--o-font-primary);
-    font-size: var(--o-font-size-base);
+    font-size: var(--o-font-size-base-unit);
 }
 
 body {
@@ -118,4 +118,22 @@ h4,
 h5,
 h6 {
     font-size: var(--o-font-size-0);
+}
+
+svg {
+    @include layout($blockSize: 1rem);
+}
+
+* {
+    :focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    :focus-visible {
+        @extend .outline-base;
+    }
+}
+
+*:focus:not(:focus-visible) {
+    outline: none;
 }
