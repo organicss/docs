@@ -12,10 +12,7 @@
         {% endif %}
     </head>
     <body>
-        <div id="root">
-            {% include 'layout/header.njk' %}
-            <main id="main-content">{{ content | safe }}</main>
-            {% include 'layout/footer.njk' %}
-        </div>
+        <main id="main-content">{{ content | safe }}</main>
+        {% include 'layout/footer.njk' %}
     </body>
 </html>

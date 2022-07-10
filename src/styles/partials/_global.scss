@@ -1,7 +1,0 @@
-#root {
-    @include layout($minBlockSize: 100%);
-
-    display: grid;
-    grid-template-rows: min-content auto min-content;
-    isolation: isolate;
-}

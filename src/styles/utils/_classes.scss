@@ -8,17 +8,4 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;
-
-    &:focus,
-    :focus-within {
-        @extend .outline-base;
-        all: unset;
-    }
-}
-
-.outline-base {
-    outline: inset;
-    outline-color: currentColor;
-    outline-offset: 0.15em;
-    outline-width: 2px;
 }
