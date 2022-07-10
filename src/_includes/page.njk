@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        {% include 'meta.njk' %}
+        {% include 'layout/meta.njk' %}
 
-        <link rel=rel="icon" type="image/svg" href="assets/icons/icon-organicss-24.svg" />
+        <link rel="shortcut icon" type="image/svg" href="/assets/icons/icon-organicss-24.svg" />
         <title>{{ title }} | OrganiCSS</title>
         <link rel="stylesheet" href="/styles/index.css" />
     </head>
     <body>
         <div id="root">
+            {% include 'layout/header.njk' %}
             <main id="main-content">{{ content | safe }}</main>
-            {% include 'footer.njk' %}
+            {% include 'layout/footer.njk' %}
         </div>
     </body>
 </html>

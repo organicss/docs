@@ -35,7 +35,8 @@
 
     --o-max-content-length: 90ch;
 
-    --o-font-size-base: 18px;
+    --o-font-size-base: 18;
+    --o-font-size-base-unit: calc(var(--o-font-size-base) * 1px);
 
     // https://utopia.fyi/type/calculator?c=320,16,1.2,1280,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
     --o-font-size--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
