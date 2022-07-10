@@ -1,0 +1,26 @@
+/*
+params: {
+    url: string;
+    content: string;
+    title?: string;
+    currentPage?: boolean;
+}
+*/
+{%- macro link(params) -%}
+    <a
+        href="{{params.url}}"
+        {% if params.currentPage %}aria-current="page"{% endif %}
+        {% if params.class %}class="{{params.class}}"{% endif %}
+        {% if params.title %}title="{{params.title}}"{% endif %}
+        {% if params.url.startsWith("http") %}
+            target="_blank"
+            rel="noopener noreferrer"
+        {% endif %}
+    >
+        {{params.content}}
+        {% if params
+            .url
+            .startsWith("http") %}
+            <span class="visually-hidden">Link opens in a new window.</span>{% endif %}
+    </a>
+{%- endmacro -%}

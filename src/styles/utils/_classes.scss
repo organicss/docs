@@ -1,0 +1,24 @@
+.visually-hidden {
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+    &:focus,
+    :focus-within {
+        @extend .outline-base;
+        all: unset;
+    }
+}
+
+.outline-base {
+    outline: inset;
+    outline-color: currentColor;
+    outline-offset: 0.15em;
+    outline-width: 2px;
+}
