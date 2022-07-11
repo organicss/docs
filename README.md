@@ -36,8 +36,12 @@ And that's exactly what CSS Logical Properties do."
 
 ## Why OrganiCSS?
 
-Using OrganiCSS allows writing logical CSS now with the appropriate fallbacks when necessary. Let's
-look at an example in SCSS.
+OrganiCSS doesn't try to re-write CSS, but to encapsulate its modern features with direct fallbacks.
+The aim is to provide support for every logical property and value described at
+[MDN: CSS Logical Properties and Values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties).
+Each property is grouped into a category, and that category becomes an OrganiCSS mixin.
+
+Let's look at an example in SCSS.
 
 ```scss
 .container {
@@ -66,14 +70,36 @@ Eventually, leaving only the modern CSS required to create the most flexible and
 
 ## Mixins
 
-OrganiCSS aims to align its mixins with the MDN's
-[CSS Logical Properties and Values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties).
-The specific properties have been grouped together into generalized mixins .
+Each mixin can be imported individually, or the whole set can be imported at once.
 
-> The documentation strips any platform-specific syntax. Note, each props would be prefaced by `$`
-> or `@` in SCSS or LESS environments.
+```scss
+// import every mixin
+@import '/node_modules/@organicss/scsss';
+
+// import only a specific mixin
+@import '/node_modules/@organicss/scss/margin';
+```
+
+```jsx
+// import every mixin
+import OrganiCSS from '@organicss/styled-components';
+
+// import only a specific mixin
+import { Margin } from '@organicss/styled-components';
+```
+
+> The documentation of props strips any platform-specific syntax. Note, each props would be prefaced
+> by `$` or `@` in SCSS or LESS environments.
 
 ### Border
+
+```scss
+@import '/node_modules/@organicss/scss/border';
+
+.container {
+    @include border(...);
+}
+```
 
 | Prop             | CSS Property (_Fallback_)                                 | Example                                                             |
 | ---------------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -108,6 +134,14 @@ The specific properties have been grouped together into generalized mixins .
 
 ### Border Radius
 
+```scss
+@import '/node_modules/@organicss/scss/borderRadius';
+
+.container {
+    @include border-radius(...);
+}
+```
+
 | Prop        | CSS Property (_Fallback_)                             | Example                                                             |
 | ----------- | ----------------------------------------------------- | ------------------------------------------------------------------- |
 | bottomLeft  | border-end-start-radius (_border-bottom-left-radius_) | `bottomLeft: 8px`                                                   |
@@ -117,6 +151,14 @@ The specific properties have been grouped together into generalized mixins .
 | topRight    | border-start-end-radius (_border-top-right-radius_)   | `topRight: 8px`                                                     |
 
 ### Layout
+
+```scss
+@import '/node_modules/@organicss/scss/layout';
+
+.container {
+    @include layout(...);
+}
+```
 
 | Prop                     | CSS Property (_Fallback_)                            | Example                                                              |
 | ------------------------ | ---------------------------------------------------- | -------------------------------------------------------------------- |
@@ -139,6 +181,14 @@ The specific properties have been grouped together into generalized mixins .
 
 ### Margin
 
+```scss
+@import '/node_modules/@organicss/scss/margin';
+
+.container {
+    @include margin(...);
+}
+```
+
 | Prop              | CSS Property (_Fallback_)                                   | Example                                            |
 | ----------------- | ----------------------------------------------------------- | -------------------------------------------------- |
 | block             | margin-block-start/end (_margin-bottom/top_)                | `block: 8px`<br/>`block: 8px 16px`                 |
@@ -158,6 +208,14 @@ The specific properties have been grouped together into generalized mixins .
 
 ### Padding
 
+```scss
+@import '/node_modules/@organicss/scss/padding';
+
+.container {
+    @include padding(...);
+}
+```
+
 | Prop              | CSS Property (_Fallback_)                                     | Example                                            |
 | ----------------- | ------------------------------------------------------------- | -------------------------------------------------- |
 | block             | padding-block-start/end (_padding-bottom/top_)                | `block: 8px`<br/>`block: 8px 16px`                 |
@@ -176,6 +234,14 @@ The specific properties have been grouped together into generalized mixins .
 | scrollInlineStart | scroll-padding-inline-start (_scroll-padding-left_)           | `scrollInlineStart: 8px`                           |
 
 ### Position
+
+```scss
+@import '/node_modules/@organicss/scss/position';
+
+.container {
+    @include position(...);
+}
+```
 
 | Prop        | CSS Property (_Fallback_)       | Example                               |
 | ----------- | ------------------------------- | ------------------------------------- |
