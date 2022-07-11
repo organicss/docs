@@ -1,0 +1,29 @@
+@import '../../../../node_modules/@organicss/scss/';
+
+header {
+    @include padding($block: var(--o-space-base-4x), $inline: var(--o-space-base-6x));
+    @include flex-base();
+
+    align-items: center;
+    justify-content: space-between;
+
+    .link--logo svg {
+        @include layout($blockSize: rem(75));
+    }
+
+    section {
+        @include flex-base();
+        gap: var(--o-space-base-4x);
+    }
+
+    a,
+    a:active,
+    a:visited,
+    a:link {
+        color: var(--o-color-aux-100);
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--o-color-aux-300);
+    }
+}

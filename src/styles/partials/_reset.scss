@@ -25,7 +25,7 @@ html {
 
 html,
 body {
-    @include layout($minBlockSize: 100%);
+    @include layout($blockSize: 100%);
 
     background: var(--o-color-aux-950);
     color: var(--o-color-aux-100);
@@ -131,7 +131,7 @@ svg {
     }
 
     :focus-visible {
-        // @extend .outline-base;
+        @extend .outline-base;
     }
 }
 

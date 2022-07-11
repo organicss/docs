@@ -8,4 +8,21 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;
+
+    &:focus,
+    :focus-within {
+        @include position($inlineStart: 1rem, $blockStart: 1rem);
+        @extend .outline-base;
+
+        all: unset;
+        background: var(--o-color-aux-950);
+        position: absolute;
+    }
+}
+
+.outline-base {
+    outline-offset: 0.15em;
+    outline-color: currentColor;
+    outline-width: 2px;
+    outline-style: inset;
 }
