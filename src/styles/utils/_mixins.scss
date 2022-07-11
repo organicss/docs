@@ -1,6 +1,0 @@
-@mixin flex-base() {
-    display: flex;
-    flex-wrap: wrap;
-    /* Default to flex wrap as a Defensive CSS best practice.
-  https://ishadeed.com/article/defensive-css/#flexbox-wrapping */
-}
