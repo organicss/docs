@@ -25,8 +25,6 @@ html {
 
 html,
 body {
-    @include layout($blockSize: 100%);
-
     background: var(--o-color-aux-950);
     color: var(--o-color-aux-100);
     font-family: var(--o-font-primary);
@@ -35,6 +33,7 @@ body {
 
 body {
     @include border($border: 15px solid var(--o-color-primary), $blockEnd: 0);
+    @include layout($blockSize: 100%);
 
     -webkit-font-smoothing: antialiased;
     accent-color: var(--o-color-primary);

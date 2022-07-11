@@ -3,8 +3,10 @@
 @import './partials/theme';
 @import './partials/fonts';
 @import './partials/reset';
+@import './partials/global';
 
 @import './utils/utils';
 
 @import 'includes/layout/header';
 @import 'includes/layout/footer';
+@import 'includes/nav';
