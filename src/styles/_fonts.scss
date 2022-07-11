@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('./fonts/archivo-variable.woff2') format('woff2'),
+        url('./fonts/archivo-variable.woff') format('woff');
+    font-named-instance: 'Regular';
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/fira-mono-regular.woff') format('woff');
+    font-named-instance: 'Regular';
+}

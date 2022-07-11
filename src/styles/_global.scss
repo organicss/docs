@@ -1,0 +1,80 @@
+main {
+    @include layout($maxInlineSize: var(--o-max-content-length));
+    @include margin($inline: auto);
+    @include padding($block: var(--o-space-base-8x), $inline: var(--o-space-base-6x));
+
+    display: grid;
+    grid-gap: var(--o-space-base-6x);
+}
+
+a {
+    color: var(--o-color-primary);
+}
+
+blockquote {
+    @include border($inlineStart: 3px solid var(--o-color-tertiary));
+    @include layout($maxInlineSize: min(670px, 80%));
+    @include margin($margin: var(--o-space-base-4x) auto);
+    @include padding($padding: var(--o-space-base-4x) var(--o-space-base-6x));
+
+    color: var(--o-color-aux-200);
+    font-size: var(--o-font-size-1);
+    font-style: italic;
+}
+
+code {
+    color: var(--o-color-aux-100);
+    font-family: var(--o-font-mono);
+}
+
+pre {
+    @include layout($maxInlineSize: calc(100vw - var(--o-space-base-6x) * 2.5));
+    @include margin($block: var(--o-space-base-6x));
+    @include padding($block: var(--o-space-base-6x));
+
+    border-image-source: linear-gradient(var(--o-color-aux-900), var(--o-color-aux-900));
+    border-image-slice: 0 fill;
+    border-image-outset: 0 100vw;
+    font-family: var(--o-font-mono);
+    overflow: auto;
+}
+
+h2 {
+    @include border($blockEnd: 3px solid var(--o-color-primary));
+}
+
+h3 {
+    @include border($inlineStart: var(--o-font-size-2) solid var(--o-color-primary));
+    @include padding($inlineStart: 0.5rem);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+
+    + * {
+        @include margin($blockStart: var(--o-space-base-6x));
+    }
+}
+
+table {
+    @include layout($inlineSize: max(100%, calc(var(--o-max-content-length) - 10ch)));
+
+    thead {
+        background: var(--o-color-tertiary);
+    }
+
+    th {
+        @include padding($padding: 0.5em);
+        @include layout($textAlign: start);
+    }
+
+    td {
+        @include padding($padding: 0.5em);
+    }
+
+    tr {
+        &:nth-child(even) {
+            background: var(--o-color-aux-900);
+        }
+    }
+}
