@@ -32,7 +32,7 @@ body {
 }
 
 body {
-    @include border($block: 1.5rem solid var(--o-color-primary));
+    @include border($blockStart: 1.5rem solid var(--o-color-primary));
     @include layout($blockSize: 100%);
 
     -webkit-font-smoothing: antialiased;

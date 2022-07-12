@@ -12,6 +12,10 @@ module.exports = function (config) {
         postcss: postcss([autoprefixer, cssnano]),
     });
 
+    config.addNunjucksGlobal('getYear', function () {
+        return new Date().getFullYear();
+    });
+
     return {
         dir: {
             input: 'src',

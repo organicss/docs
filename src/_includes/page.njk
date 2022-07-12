@@ -9,6 +9,13 @@
         <link rel="stylesheet" href="/styles/main.css"/>
     </head>
     <body>
+        <header>
+            <a href="https://github.com/organicss/organicss" rel="noopener noreferrer" title="View OrganiCSS on Github">{% include '../assets/icon-github.svg' %}</a>
+            <a href="https://twitter.com/DanielYuschick" rel="noopener noreferrer" title="Visit OrganiCSS on Twitter">{% include '../assets/icon-twitter.svg' %}</a>
+        </header>
         <main>{{ content | safe }}</main>
+        <footer>
+            <span>OrganiCSS © {{ getYear() }}</span>
+        </footer>
     </body>
 </html>

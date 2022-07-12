@@ -1,7 +1,7 @@
 main {
     @include layout($maxInlineSize: var(--o-max-content-length));
     @include margin($inline: auto);
-    @include padding($block: var(--o-space-base-8x), $inline: var(--o-space-base-6x));
+    @include padding($blockEnd: var(--o-space-base-8x), $inline: var(--o-space-base-6x));
 
     display: grid;
     grid-gap: var(--o-space-base-6x);
@@ -77,4 +77,26 @@ table {
             background: var(--o-color-aux-900);
         }
     }
+}
+
+header {
+    @include padding($block: var(--o-space-base-4x), $inline: var(--o-space-base-6x));
+    @include position($blockStart: 0, $inlineEnd: 0);
+
+    display: grid;
+    grid-gap: var(--o-space-base-6x);
+    grid-template-columns: max-content max-content;
+    justify-content: end;
+    position: sticky;
+
+    svg {
+        @include layout($blockSize: 1.5rem);
+    }
+}
+
+footer {
+    @include padding($block: var(--o-space-base-4x), $inline: var(--o-space-base-6x));
+    @include layout($textAlign: end);
+    background: var(--o-color-primary);
+    color: var(--o-color-aux-950);
 }
