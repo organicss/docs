@@ -1,4 +1,4 @@
-![OrganiCSS - Logical CSS. Naturally.](./assets/logo-organicss.svg)
+![OrganiCSS - Logical CSS. Naturally.](./src/assets/logo-organicss.svg)
 
 OrganiCSS is a collection of mixins for writing logical CSS in different pre-processors and
 libraries.
