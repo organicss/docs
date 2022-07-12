@@ -1,6 +1,6 @@
 ![OrganiCSS - Logical CSS. Naturally.](./src/assets/organicss-repo-opengraph-tagline.jpg)
 
--   [What is Logical CSS](#what-is-logical-css)
+-   [What is Logical CSS?](#what-is-logical-css)
 -   [Why OrganiCSS?](#why-organicss)
 -   [Getting Started](#getting-started)
 -   [Mixins](#mixins)

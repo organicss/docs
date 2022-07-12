@@ -10,7 +10,7 @@ description:
 
 <nav>
 
--   [What is Logical CSS](#what-is-logical-css)
+-   [What is Logical CSS?](#what-is-logical-css)
 -   [Why OrganiCSS?](#why-organicss)
 -   [Getting Started](#getting-started)
 -   [Mixins](#mixins)
