@@ -72,6 +72,36 @@ This will return the resulting CSS.
 As browser support for logical CSS increases, the `@supports` query will be less and less necessary.
 Eventually, leaving only the modern CSS required to create the most flexible and inclusive UIs.
 
+## Getting Started
+
+To begin using OrganiCSS, first select the flavor of choice: LESS, SCSS; Styled Components or
+Stylus, and install the package into your project.
+
+```bash
+npm i @organicss/less
+npm i @organicss/scss
+npm i @organicss/styled-components
+npm i @organicss/stylus
+```
+
+Once the package is installed, import the mixins and include them in the styles.
+
+```scss
+@import '../node_modules/@organicss/scss';
+
+.container {
+    @include padding($block: 1rem 2rem, $inline: var(--space-2));
+}
+```
+
+```jsx
+import { Padding } from '@organics/styled-components";
+
+const Container = styled.section`
+    ${Padding({ block: "1rem 2rem", inline: "var(--space-2)" })};
+`;
+```
+
 ## Mixins
 
 Each mixin can be imported individually, or the whole set can be imported at once.
