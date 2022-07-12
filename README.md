@@ -97,8 +97,6 @@ import { Margin } from '@organicss/styled-components';
 }
 ```
 
-<section class="table-wrapper">
-
 | Prop             | CSS Property (_Fallback_)                                 | Example                                                             |
 | ---------------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
 | border           | border                                                    | `border: 1px solid red`                                             |
@@ -130,8 +128,6 @@ import { Margin } from '@organicss/styled-components';
 | inlineStartStyle | border-inline-start-style (_border-left-style_)           | `inlineStartStyle: dashed`                                          |
 | inlineStartWidth | border-inline-start-width (_border-left-width_)           | `inlineStartWidth: 1px`                                             |
 
-</section>
-
 ### Border Radius
 
 ```scss
@@ -142,8 +138,6 @@ import { Margin } from '@organicss/styled-components';
 }
 ```
 
-<section class="table-wrapper">
-
 | Prop        | CSS Property (_Fallback_)                             | Example                                                             |
 | ----------- | ----------------------------------------------------- | ------------------------------------------------------------------- |
 | bottomLeft  | border-end-start-radius (_border-bottom-left-radius_) | `bottomLeft: 8px`                                                   |
@@ -151,8 +145,6 @@ import { Margin } from '@organicss/styled-components';
 | radius      | border-radius                                         | `radius: 8px`<br/>`radius: 8px 4px`<br/>`radius: 8px 4px / 1em 10%` |
 | topLeft     | border-start-start-radius (_border-top-left-radius_)  | `topLeft: 8px`                                                      |
 | topRight    | border-start-end-radius (_border-top-right-radius_)   | `topRight: 8px`                                                     |
-
-</section>
 
 ### Layout
 
@@ -163,8 +155,6 @@ import { Margin } from '@organicss/styled-components';
     @include layout(...);
 }
 ```
-
-<section class="table-wrapper">
 
 | Prop                     | CSS Property (_Fallback_)                            | Example                                                              |
 | ------------------------ | ---------------------------------------------------- | -------------------------------------------------------------------- |
@@ -185,8 +175,6 @@ import { Margin } from '@organicss/styled-components';
 | resize                   | resize                                               | `resize: block`                                                      |
 | textAlign                | text-align                                           | `textAlign: start`                                                   |
 
-</section>
-
 ### Margin
 
 ```scss
@@ -196,8 +184,6 @@ import { Margin } from '@organicss/styled-components';
     @include margin(...);
 }
 ```
-
-<section class="table-wrapper">
 
 | Prop              | CSS Property (_Fallback_)                                   | Example                                            |
 | ----------------- | ----------------------------------------------------------- | -------------------------------------------------- |
@@ -216,8 +202,6 @@ import { Margin } from '@organicss/styled-components';
 | scrollInlineEnd   | scroll-margin-inline-end (_scroll-margin-right_)            | `scrollInlineEnd: 8px`                             |
 | scrollInlineStart | scroll-margin-inline-start (_scroll-margin-left_)           | `scrollInlineStart: 8px`                           |
 
-</section>
-
 ### Padding
 
 ```scss
@@ -227,8 +211,6 @@ import { Margin } from '@organicss/styled-components';
     @include padding(...);
 }
 ```
-
-<section class="table-wrapper">
 
 | Prop              | CSS Property (_Fallback_)                                     | Example                                            |
 | ----------------- | ------------------------------------------------------------- | -------------------------------------------------- |
@@ -247,8 +229,6 @@ import { Margin } from '@organicss/styled-components';
 | scrollInlineEnd   | scroll-padding-inline-end (_scroll-padding-right_)            | `scrollInlineEnd: 8px`                             |
 | scrollInlineStart | scroll-padding-inline-start (_scroll-padding-left_)           | `scrollInlineStart: 8px`                           |
 
-</section>
-
 ### Position
 
 ```scss
@@ -258,8 +238,6 @@ import { Margin } from '@organicss/styled-components';
     @include position(...);
 }
 ```
-
-<section class="table-wrapper">
 
 | Prop        | CSS Property (_Fallback_)       | Example                               |
 | ----------- | ------------------------------- | ------------------------------------- |
@@ -271,5 +249,3 @@ import { Margin } from '@organicss/styled-components';
 | inlineEnd   | inset-inline-end (_right_)      | `inlineEnd: 0`                        |
 | inlineStart | inset-inline-start (_left_)     | `inlineStart: 10%`                    |
 | inset       | inset (_top/right/bottom/left_) | `inset: 0`<br/>`inset: 0 50% 10% 10%` |
-
-</section>
