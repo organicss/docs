@@ -119,7 +119,7 @@ Once the package is installed, import the mixins and include them in the styles.
 ```
 
 ```jsx
-import { Padding } from '@organics/styled-components";
+import { Padding } from '@organicss/styled-components";
 
 const Container = styled.section`
     ${Padding({ block: "1rem 2rem", inline: "var(--space-2)" })};
