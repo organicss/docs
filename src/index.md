@@ -6,7 +6,24 @@ description:
     libraries.
 ---
 
-![OrganiCSS - Logical CSS. Naturally.](./assets/logo-organicss.svg)
+![OrganiCSS - Logical CSS. Naturally.](./assets/organicss-repo-opengraph-tagline.jpg)
+
+<nav>
+
+-   [What is Logical CSS](#what-is-logical-css)
+-   [Why OrganiCSS is Logical CSS](#why-organicss)
+-   [Getting Started](#getting-started)
+-   [Mixins](#mixins)
+-   [Border](#border)
+-   [Border Radius](#border-radius)
+-   [Layout](#layout)
+-   [Margin](#margin)
+-   [Padding](#padding)
+-   [Position](#position)
+
+</nav>
+
+# OrganiCSS
 
 OrganiCSS is a collection of mixins for writing logical CSS in different pre-processors and
 libraries.

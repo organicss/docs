@@ -100,3 +100,15 @@ footer {
     background: var(--o-color-primary);
     color: var(--o-color-aux-950);
 }
+
+ul ul {
+    @include margin($inlineStart: 1rem);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--o-space-base-4x);
+    list-style: none;
+    white-space: nowrap;
+}
