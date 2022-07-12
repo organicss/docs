@@ -11,7 +11,7 @@ description:
 <nav>
 
 -   [What is Logical CSS](#what-is-logical-css)
--   [Why OrganiCSS is Logical CSS](#why-organicss)
+-   [Why OrganiCSS?](#why-organicss)
 -   [Getting Started](#getting-started)
 -   [Mixins](#mixins)
 -   [Border](#border)
