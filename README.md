@@ -13,10 +13,15 @@
 
 # OrganiCSS
 
--   [What is Logical CSS](#what-is-logical-css)
-
 OrganiCSS is a collection of mixins for writing logical CSS in different pre-processors and
 libraries.
+
+| Package                        | Version                                                                                                                                |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `@organicss/less`              | [![npm version](https://badge.fury.io/js/@organicss%2Fless.svg)](https://badge.fury.io/js/@organicss%2Fless)                           |
+| `@organicss/scss`              | [![npm version](https://badge.fury.io/js/@organicss%2Fscss.svg)](https://badge.fury.io/js/@organicss%2Fscss)                           |
+| `@organicss/styled-components` | [![npm version](https://badge.fury.io/js/@organicss%2Fstyled-components.svg)](https://badge.fury.io/js/@organicss%2Fstyled-components) |
+| `@organicss/stylus`            | [![npm version](https://badge.fury.io/js/@organicss%2Fstylus.svg)](https://badge.fury.io/js/@organicss%2Fstylus)                       |
 
 ## What is Logical CSS?
 
