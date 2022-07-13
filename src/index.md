@@ -32,6 +32,7 @@ libraries.
 
 | Package                        | Version                                                                                                                                |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `@organicss/emotion`           | [![npm version](https://badge.fury.io/js/@organicss%2Femotion.svg)](https://badge.fury.io/js/@organicss%2Femotion)                     |
 | `@organicss/less`              | [![npm version](https://badge.fury.io/js/@organicss%2Fless.svg)](https://badge.fury.io/js/@organicss%2Fless)                           |
 | `@organicss/scss`              | [![npm version](https://badge.fury.io/js/@organicss%2Fscss.svg)](https://badge.fury.io/js/@organicss%2Fscss)                           |
 | `@organicss/styled-components` | [![npm version](https://badge.fury.io/js/@organicss%2Fstyled-components.svg)](https://badge.fury.io/js/@organicss%2Fstyled-components) |
@@ -106,6 +107,7 @@ To begin using OrganiCSS, first select the flavor of choice: LESS, SCSS; Styled 
 Stylus, and install the package into your project.
 
 ```bash
+npm i @organicss/emotion
 npm i @organicss/less
 npm i @organicss/scss
 npm i @organicss/styled-components
