@@ -252,6 +252,7 @@ import { Margin } from '@organicss/styled-components';
 | overscrollBehaviorInline | overscroll-behavior-inline (_overscroll-behavior-y_) | `overscrollBehaviorInline: auto`                                     |
 | resize                   | resize                                               | `resize: block`                                                      |
 | textAlign                | text-align                                           | `textAlign: start`                                                   |
+| textAlignLast            | text-align-last                                      | `textAlignLast: start`                                               |
 
 </section>
 
