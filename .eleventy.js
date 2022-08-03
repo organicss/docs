@@ -7,6 +7,7 @@ const anchors_plugin = require('@orchidjs/eleventy-plugin-ids');
 
 module.exports = function (config) {
     config.addPassthroughCopy('./src/assets');
+    config.addPassthroughCopy('./src/styles/fonts');
 
     config.addPlugin(anchors_plugin);
     config.addPlugin(syntaxHighlight);
